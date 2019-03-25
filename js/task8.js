@@ -1,23 +1,21 @@
-// Зеркальная перестановка символов в строке относительно любого символа 
-// @param string (string) - введенный текст
-// @param symbol (string) - относительно какого символа меняем местами
-
-function replaceSymbols(string, symbol) {
-	var i = 0,
-		arr = string.match(/[\s\S]/g);
-	arr = arr.reverse();
-
-	if (string.indexOf(symbol) === -1) {
-		return 'В введенной Вами строки нет символа "' + symbol + '"';
-	}
-	return string.replace(/[\s\S]/g, function () {
-		return String(arr[i++]);
-	}); 
-}
-
 document.getElementById('check').onclick = function() {
 	document.getElementById('result').innerHTML = '';
 	var newElem = document.createElement('p');
-	newElem.innerHTML = replaceSymbols(document.getElementById('input').value, '@');
+	newElem.innerHTML = drawTriangle(6,'#');
 	document.getElementById('result').appendChild(newElem);
 };
+
+// Рисуем треугольник из символов
+// @param string (string) - количество строк - высота треугольника
+// @param symbol - символ, которым будем рисовать треугольник
+
+function drawTriangle(string, symbol) {
+	var triangle = '';
+	var triangleString = '';
+
+	for (var i = 1; i <= string; i++) {
+		triangleString += symbol;
+		triangle += triangleString + '<br/>';
+	}
+	return triangle;
+}
