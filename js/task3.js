@@ -1,17 +1,41 @@
-// Обертка слова в тексте в теги
-// @param text (string) - введенный текст
-// @param template (object) - регулярное выражение-шаблон
-// @param change (string) - на что заменяем
+document.getElementById('check').onclick = function() {
+	alert('В сутках ' + calculateSecInDay(1) + ' секунд');
+	alert('В неделе ' + calculateSecInWeek(1) + ' секунд');
+	alert('В 30-дневном месяце ' + calculateSecInMonth(1) + ' секунд');
+	alert('В невисокосном годе ' + calculateSecInYear(1) + ' секунд');
+};
 
-function wrapWordInTags (text, template, change) {
-	var i = 0,
-		arr = text.match(template);
+// Функция, считающая количество секунд в часе
+// @param numHours - количество часов, в которых нужно посчитать секунды
 
-	return text.replace(template, function () {
-    	return '<' + change + '>' + String(arr[i++]) + '</' + change + '>';
-	  }); 
+function calculateSecInHour (numHours) {
+	return 60*60*numHours;
 }
 
-document.getElementById('check').onclick = function() {
-	document.getElementById('text').innerHTML = wrapWordInTags(document.getElementById('text').innerHTML, /([Фф]ункци(ю|ей|и|ями|ям|й|ями|ях|я))/g, 'mark');
-};
+// Функция, считающая количество секунд в сутках
+// @param numDays - количество суток, в которых нужно посчитать секунды
+
+function calculateSecInDay (numDays) {
+	return calculateSecInHour(1)*24*numDays;
+}
+
+// Функция, считающая количество секунд в неделе
+// @param numWeek - количество недель, в которых нужно посчитать секунды
+
+function calculateSecInWeek (numWeek) {
+	return calculateSecInDay(1)*7*numWeek;
+}
+
+// Функция, считающая количество секунд в месяце
+// @param numMonth - количество месяцев, в которых нужно посчитать секунды
+
+function calculateSecInMonth (numMonth) {
+	return calculateSecInDay(1)*30*numMonth;
+}
+
+// Функция, считающая количество секунд в годе
+// @param numYear - количество годов, в которых нужно посчитать секунды
+
+function calculateSecInYear (numYear) {
+	return calculateSecInDay(1)*365*numYear;
+}
