@@ -14,41 +14,25 @@
 			<a href = "task6.html">Следующая задача</a>
 		</div>
 		<h1>Задача 5</h1>
-		<p>Дана строка с целыми числами <b>'a1b2c3'</b>. С помощью регулярки преобразуйте строку так, чтобы вместо этих чисел стояли их кубы.</p>
-		<label for="input">
-			<span>Введите Вашу строку:</span>
-			<input type="text" id="input"/>
-		</label>
+		<p>Определите булеву переменную так, чтобы, при наличии определенного блока с заданным классом, на странице она была true, иначе false. Можно использовать jQuery.</p>
 		<button class="check" id="check">Проверить</button>
-		<div id="result"></div>
+		<p>При нажатии на кнопку "Проверить" на экран выводится сообщение со значением переменной true.</p>
+		<div class="block" id="block">Нажми на меня - и я удалюсь, а переменная поменяет свое значение на false</div>
+		<p>После удаления круга при нажатии на кнопку "Проверить" на экран выводится сообщение со значением перемнной false.</p>
 		<h2>Решение</h2>
-		<h3>Используемое регулярное выражение:</h3>
-		<pre>/\d+/g</pre>
-		<h3>Код для решения задачи:</h3>
 		<pre>
-//Возведение чисел в строке в степень
-// @param incomingString (string) - строка, числа в которой нужно возвести в степень
-// @param pow (number) - показатель степени
-				
-function replaceDigitsInStringToPow (incomingString, pow) {
-	var regExp = /\d+/g,
-		arr = incomingString.match(regExp),
-		resultString = '',
-		i = 0;
-					
-	return incomingString.replace(regExp, function () {
-		return String(Math.pow(Number(arr[i++]), pow));
-	});
+var boolean = true;
+
+document.getElementById('block').onclick = function() {
+	this.remove();
 }
 
-//Инициализация функции по клику на кнопку "Проверить" и добавление блока с ответом перед решением
-
 document.getElementById('check').onclick = function() {
-	document.getElementById('result').innerHTML = '';
-	var newElem = document.createElement('p');
-	newElem.innerHTML = replaceDigitsInStringToPow(document.getElementById('input').value, 3);
-	document.getElementById('result').appendChild(newElem);
-};
+	if (document.getElementById('block') == undefined) {
+		boolean = false;
+	}
+	alert('Сейчас значение переменной ' + boolean);
+}
 		</pre>
 	<script src="../js/task5.js"></script>
 	</body>

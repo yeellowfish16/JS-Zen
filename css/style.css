@@ -78,3 +78,20 @@ pre {
 	display: flex;
 	justify-content: space-between;
 }
+
+.block {
+	width: 250px;
+	height: 250px;
+	background-color: plum;
+	border-radius: 50%;
+	text-align: center;
+	cursor: pointer;
+	box-sizing: border-box;
+	padding-top: 98px;
+	margin: 0 auto;
+}
+
+.block:hover {
+	background-color: darkorchid;
+	color: white;
+}

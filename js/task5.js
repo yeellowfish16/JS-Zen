@@ -1,20 +1,12 @@
-//Возведение чисел в строке в степень
-// @param incomingString (string) - строка, числа в которой нужно возвести в степень
-// @param pow (number) - показатель степени
+var boolean = true;
 
-function replaceDigitsInStringToPow (incomingString, pow) {
-	var regExp = /\d+/g,
-		arr = incomingString.match(regExp),
-		i = 0;
-	
-	return incomingString.replace(regExp, function () {
-		return String(Math.pow(Number(arr[i++]), pow));
-	});
+document.getElementById('block').onclick = function() {
+	this.remove();
 }
 
 document.getElementById('check').onclick = function() {
-	document.getElementById('result').innerHTML = '';
-	var newElem = document.createElement('p');
-	newElem.innerHTML = replaceDigitsInStringToPow(document.getElementById('input').value, 3);
-	document.getElementById('result').appendChild(newElem);
-};	
+	if (document.getElementById('block') == undefined) {
+		boolean = false;
+	}
+	alert('Сейчас значение переменной ' + boolean);
+}
