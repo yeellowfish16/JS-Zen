@@ -14,52 +14,28 @@
 			<a href = "task5.html">Следующая задача</a>
 		</div>
 		<h1>Задача 4</h1>
-		<p>Написать функцию, которая при помощи регулярных выражений разбивает текст на отдельные слова и находит частоту встречаемости отдельных слов.</p>
-		<label for="input">
-			<span>Введите Ваш текст:</span>
-			<textarea type="text" id="input"></textarea>
-		</label>
-		<button class="check" id="check">Проверить</button>
-		<div id="result"></div>
-		<h2>Решение</h2>
-		<h3>Используемое регулярное выражение:</h3>
-		<pre>/[а-яА-ЯёЁa-zA-Z]+/g</pre>
-		<h3>Код для решения задачи:</h3>
+		<p>Переделайте приведенный код так, чтобы в нем использовались операции +=, -=, *=, /=, ++, --. Количество строк кода при этом не должно измениться. Код для переделки:</p>
 		<pre>
-// Разбивам текст на слова и считаем количество каждого слова
-// @param text (string) - введенный текст
-			
-function countEveryWordInText(text) {
-	var regExp = /[а-яА-ЯёЁa-zA-Z]+/g,
-		countResult = {},
-		wordsArray = text.match(regExp);
-			
-	for (var i = 0; i < wordsArray.length; i++) {
-		var a = wordsArray[i];
-					
-		if (countResult[a] != undefined) {
-			++ countResult[a];
-		}
-					
-		else {
-			countResult[a] = 1;
-		}
-	}
-				
-	for (var word in countResult) {
-		document.getElementById('result').innerHTML = '';
-		var newElem = document.createElement('p');
-		newElem.innerHTML = 'Слово \"' + word + '\" встречается ' + countResult[word] + ' раз(а)';
-		document.getElementById('result').appendChild(newElem);
-	}
-	return;
-}
-	
-//Инициализируем функцию по клику на кнопку "Проверить"
-	
-document.getElementById('check').onclick = function() {
-	countEveryWordInText(document.getElementById('input').value);
-};
+			var num = 1;
+			num = num + 12;
+			num = num - 14;
+			num = num * 5;
+			num = num / 7;
+			num = num + 1;
+			num = num - 1;
+			alert(num);
+		</pre>
+		<button class="check" id="check">Проверить</button>
+		<h2>Решение</h2>
+		<pre>
+			var num = 1;
+			num += 12;
+			num -= 14;
+			num *= 5;
+			num /= 7;
+			num ++;
+			num --;
+			alert(num);
 		</pre>
 	<script src="../js/task4.js"></script>
 	</body>
