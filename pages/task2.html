@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<title>Задача 2</title>
+		<link rel="stylesheet" href="../css/style.css"/>
+	</head>
+	<body>
+		<div class="links">
+			<a href = "task1.html">Предыдущая задача</a>
+			<a href = "../index.html">Оглавление</a>
+			<a href = "task3.html">Следующая задача</a>
+		</div>
+		<h1>Задача 2</h1>
+		<p>Написать регулярное выражение для атрибута pattern, заставляющее вводить не менее 5 алфавитно-цифровых символов.</p>
+		<label for="input">
+			<span>Введите Вашу строку:</span>
+			<input type="text" id="input" pattern="^[\w]{5,}$" required/>
+		</label>
+		<button class="check" id="check">Проверить</button>
+		<h2>Решение</h2>
+		<h3>Используемое регулярное выражение:</h3>
+		<pre>^[\wа-яА-Я]{5,}$</pre>
+		<h3>Код для решения задачи:</h3>
+		<pre>
+// Проверка соответствия введенной строки шаблону и ее длины
+// @param string (string) - введенная строка
+// @param template (object) - регулярное выражение-шаблон
+				
+function checkStringForTemplate (string, template) {
+	return template.test(string);
+}
+
+// Инициализация функции по клику на кнопку "Проверить"
+
+document.getElementById('check').onclick = function() {
+	alert(checkStringForTemplate(document.getElementById('input').value, /^[\wа-яА-Я]{5,}$/));
+};
+		</pre>
+	<script src="../js/task2.js"></script>
+	</body>
+</html>
