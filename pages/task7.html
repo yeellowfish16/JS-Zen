@@ -14,35 +14,62 @@
 			<a href = "task8.html">Следующая задача</a>
 		</div>
 		<h1>Задача 7</h1>
-		<p>Определить четные числа. Отрицательные числа, дроби, ноль, а также строки, содержащие не цифры - игнорировать. Регулярное выражение должно быть универсальным.</p>
-		<p><i>P.S.: для удобства проверки можешь использовать строку <b>"a0b1c2d3e4f06g10h112i10.7j10,8k-88"</b>. В ней есть и ноль, и положительные четные, и положительные нечетные, и дробные, и отрицательные числа. Но можешь придумать и свою :)</i></p>
+		<p>Создать функцию, рассчитывающую факториал заданного числа минимум тремя разными способами. Число и тип данных вывести на экран.</p>
 		<label for="input">
 			<span>Введите Вашу строку:</span>
-			<input type="text" id="input"/>
+			<input type="number" id="input"/>
 		</label>
 		<button class="check" id="check">Проверить</button>
-		<div id="result"></div>
 		<h2>Решение</h2>
-		<h3>Используемое регулярное выражение:</h3>
-		<pre>/(?&lt;![-\d])(?&lt;!\d[.,])(?!0)(\d*[24680])(?![.,]?\d)/g</pre>
-		<h3>Код для решения задачи:</h3>
 		<pre>
-//Поиск целых положительных чисел, неравных нулю
-// @param incomingString (string) - строка, из которой нужно вырезать числа
-			
-function findEvenPositiveNumbers (incomingString) {
-	var arr = incomingString.match(/(?&lt;![-\d])(?&lt;!\d[.,])(?!0)(\d*[24680])(?![.,]?\d)/g);
-	return String(arr);
+document.getElementById('check').onclick = function() {
+	calculateFactorial(document.getElementById('input').value);
+};
+
+// Вычисление факториала числа
+// @param incomingString (string) - строка, из которой нужно вырезать число, факториал которого мы высчитываем
+
+function calculateFactorial (incomingString) {
+	var num = parseInt(incomingString);
+	for (var i = incomingString - 1; i > 0; i--) {
+		num *= i;
+	}
+	alert(num);
 }
 
-//Инициализация функции по клику на кнопку "Проверить"
+или
 
 document.getElementById('check').onclick = function() {
-	document.getElementById('result').innerHTML = '';
-	var newElem = document.createElement('p');
-	newElem.innerHTML = findEvenPositiveNumbers(document.getElementById('input').value);
-	document.getElementById('result').appendChild(newElem);
+	alert(calculateFactorial(document.getElementById('input').value));
+};
+
+// Вычисление факториала числа
+// @param incomingString (string) - строка, из которой нужно вырезать число, факториал которого мы высчитываем
+
+function calculateFactorial (incomingString) {
+  if (incomingString != 1) {
+  	return incomingString * calculateFactorial(incomingString - 1);
+  }
+
+  else {
+  	return 1;
+  }
 }
+
+или
+
+
+document.getElementById('check').onclick = function() {
+	alert(calculateFactorial(document.getElementById('input').value));
+};
+
+// Вычисление факториала числа
+// @param incomingString (string) - строка, из которой нужно вырезать число, факториал которого мы высчитываем
+
+function calculateFactorial (incomingString) {
+  return incomingString ? incomingString * calculateFactorial(incomingString - 1) : 1;
+}
+
 		</pre>
 	<script src="../js/task7.js"></script>
 	</body>
