@@ -1,11 +1,10 @@
-// Проверка соответствия введенной строки шаблону и ее длины
-// @param string (string) - введенная строка
-// @param template (object) - регулярное выражение-шаблон
-
-function checkStringForTemplate (string, template) {
-	return template.test(string);
-}
-
 document.getElementById('check').onclick = function() {
-	alert(checkStringForTemplate(document.getElementById('input').value, /^[\wа-яА-Я]{5,}$/));
+	calculateSecInHour(1);
 };
+
+// Функция, считающая количество секунд в часе
+// @param numHours - количество часов, в которых нужно посчитать секунды
+
+function calculateSecInHour (numHours) {
+	alert(60*60*numHours);
+}
