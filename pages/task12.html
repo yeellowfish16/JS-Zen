@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<title>Задача 12</title>
+		<link rel="stylesheet" href="../css/style.css"/>
+	</head>
+	<body>
+		<div class="links">
+			<a href = "task11.html">Предыдущая задача</a>
+			<a href = "../index.html">Оглавление</a>
+			<a href = "task13.html">Следующая задача</a>
+		</div>
+		<h1>Задача 12</h1>
+        <p>Напишите функцию range, принимающую два аргумента - начало и конец диапазона, и возвращающую массив, который содержит все числа из него, включая начальное и конечное.</p>
+        <p>Затем напишите функцию sum, принимающую массив чисел и возвращающую их сумму. </p>
+        <p>В качестве бонуса дополните функцию range, чтобы она могла принимать необязательный третий аргумент – шаг для построения массива. Если он не задан, шаг равен единице. Вызов функции range(1, 10, 2) должен будет вернуть [1, 3, 5, 7, 9]. Убедитесь, что она работает с отрицательным шагом так, что вызов range(5, 2, -1) возвращает [5, 4, 3, 2].</p>
+        <label for="input">
+			<span>Введите первое число:</span>
+			<input type="text" id="input1"/>
+		</label>
+		<label for="input">
+			<span>Введите второе число:</span>
+			<input type="text" id="input2"/>
+		</label>
+        <label for="input">
+			<span>Введите шаг:</span>
+			<input type="text" id="input3"/>
+		</label>
+		<button class="check" id="check">Проверить</button>
+        <div id="result"></div>
+		<h2>Решение</h2>
+		<pre>
+document.getElementById('check').onclick = function() {
+	document.getElementById('result').innerHTML = '';
+	var newElem = document.createElement('p'),
+            newArray = range(document.getElementById('input1').value, document.getElementById('input2').value, document.getElementById('input3').value),
+            arraySum = sum(newArray);
+
+	newElem.innerHTML = '&#60p&#62 Новый массив: ' + newArray + '. Сумма элементов этого массива: ' + arraySum + '.&#60/p&#62';
+	document.getElementById('result').appendChild(newElem);
+};
+
+// Создаем массив
+// @param strNumber1 - число 1
+// @param strNumber2 - число 1
+// @param strStep - шаг
+
+function range(strNumber1, strNumber2, strStep) {
+    var arr = [],
+        num1 = parseInt(strNumber1),
+        num2 = parseInt(strNumber2),
+        step = parseInt(strStep);
+
+    if (!step) {
+        step = 1;
+    }
+
+    if (step > 0) {
+        if (num1 < num2) {
+            for (var i = num1; i <= num2; i += step) {
+                arr.push(i);
+            }
+        }
+
+        else if (num2 < num1) {
+            for (var i = num2; i <= num1; i +=step) {
+                arr.push(i);
+            }
+        }
+
+        else if (num2 = num1) {
+            arr.push(num1);
+        }
+    }
+
+    else {
+        if (num1 < num2) {
+            for (var i = num2; i >= num1; i += step) {
+                arr.push(i);
+            }
+        }
+
+        else if (num2 < num1) {
+            for (var i = num1; i >= num2; i +=step) {
+                arr.push(i);
+            }
+        }
+
+        else if (num2 = num1) {
+            arr.push(num1);
+        }
+    }
+
+    return arr;
+}
+
+// Считаем сумму элементов массива
+// @param arrArray - масив чисел
+
+function sum(arrArray) {
+    var sum = 0;
+
+    for (i = 0; i < arrArray.length; i++) {
+        sum += arrArray[i];
+    }
+
+    return sum;
+}
+
+		</pre>
+	<script src="../js/task12.js"></script>
+	</body>
+</html>
