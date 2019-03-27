@@ -14,21 +14,43 @@
 			<a href = "task11.html">Следующая задача</a>
 		</div>
 		<h1>Задача 10</h1>
-		<p>10.	Выделить тегом &lt;strong&gt; повторяющиеся слова.</p>
-		<p>Пример:</p>
-		<p>Тhis is a test => This is a test</p>
-		<p>Тhis is is a test => This is <strong>is</strong> a test</p>
+		<p>Напишите функцию min, принимающую два аргумента, и возвращающую минимальный из них.</p>
 		<label for="input">
-			<span>Введите Вашу строку:</span>
-			<input type="text" id="input"/>
+			<span>Введите первое число:</span>
+			<input type="text" id="input1"/>
+		</label>
+		<label for="input">
+			<span>Введите второе число:</span>
+			<input type="text" id="input2"/>
 		</label>
 		<button class="check" id="check">Проверить</button>
 		<div id="result"></div>
 		<h2>Решение</h2>
-		<h3>Используемое регулярное выражение:</h3>
-		<pre></pre>
-		<h3>Код для решения задачи:</h3>
 		<pre>
+document.getElementById('check').onclick = function() {
+	document.getElementById('result').innerHTML = '';
+	var newElem = document.createElement('p');
+	newElem.innerHTML = compare(document.getElementById('input1').value, document.getElementById('input2').value);
+	document.getElementById('result').appendChild(newElem);
+};
+
+// Сравниваем аргументы функции
+// @param strArg1 - число 1
+// @param strArg2 - число 2
+
+function compare(strArg1, strArg2) {
+	if (parseInt(strArg1) > parseInt(strArg2)) {
+		return 'Число ' + strArg2 + ' меньше';
+	}
+
+	else if (parseInt(strArg2) > parseInt(strArg1)) {
+		return 'Число ' + strArg1 + ' меньше';
+	}
+
+	else {
+		return 'Похоже, что числа равны';
+	}
+}
 		</pre>
 	<script src="../js/task10.js"></script>
 	</body>

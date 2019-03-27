@@ -1,11 +1,23 @@
-// Проверка соответствия введенной строки шаблону
-// @param string (string) - введенная строка
-// @param template (object) - регулярное выражение-шаблон
+var arr = [];
 
-function checkStringForTemplate (string, template) {
-	return template.test(string);
+for (var i = 1; i <= 100; i++) {
+	arr.push(i);
+}
+
+for (var j = 0; j < arr.length; j++) {
+	if (arr[j] % 3 == 0 && arr[j] % 5 == 0) {
+		arr[j] = 'FizzBuzz'
+	}
+
+	else if (arr[j] % 3 == 0) {
+		arr[j] = 'Fizz'
+	}
+
+	else if (arr[j] % 5 == 0) {
+		arr[j] = 'Buzz'
+	}
 }
 
 document.getElementById('check').onclick = function() {
-	alert(checkStringForTemplate(document.getElementById('input').value, /(https?:\/\/([w]{3}\.)?([\w-]{1,}\.){0,}[\w-]{1,}\.[a-z]{2,6}\/?([\w_-]+\/?)*)/ig));
+	console.log(arr);
 };

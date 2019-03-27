@@ -14,29 +14,32 @@
 			<a href = "task10.html">Следующая задача</a>
 		</div>
 		<h1>Задача 9</h1>
-		<p>Проверить, является ли данная строка URL вида <b>http(s)://домен.зона/чего-то-там</b>. Протокол может быть как HTTP, так и HTTPS. Русскоязычные домены пока не рассматриваем.</p>
-		<label for="input">
-			<span>Введите Вашу строку:</span>
-			<input type="text" id="input"/>
-		</label>
+		<p>FizzBuzz. Напишите программу, которая выводит через console.log все числа от 1 до 100, с двумя исключениями. Для чисел, нацело делящихся на 3, она должна выводить ‘Fizz’, а для чисел, делящихся на 5 (но не на 3) – ‘Buzz’. Когда сумеете – исправьте её так, чтобы она выводила «FizzBuzz» для всех чисел, которые делятся и на 3 и на 5.</p>
 		<button class="check" id="check">Проверить</button>
-		<div id="result"></div>
 		<h2>Решение</h2>
-		<h3>Используемое регулярное выражение:</h3>
-		<pre>/https?:\/\/([w]{3}\.)?([\w-]{1,}\.){0,}[\w-]{1,}\.[a-z]{2,6}\/*([\w_-]+\/*)*/ig</pre>
-		<h3>Код для решения задачи:</h3>
 		<pre>
-// Проверка соответствия введенной строки шаблону
-// @param string (string) - введенная строка
-// @param template (object) - регулярное выражение-шаблон
+var arr = [];
 
-function checkStringForTemplate (string, template) {
-	return template.test(string);
+for (var i = 1; i <= 100; i++) {
+	arr.push(i);
+}
+
+for (var j = 0; j < arr.length; j++) {
+	if (arr[j] % 3 == 0 && arr[j] % 5 == 0) {
+		arr[j] = 'FizzBuzz'
+	}
+
+	else if (arr[j] % 3 == 0) {
+		arr[j] = 'Fizz'
+	}
+
+	else if (arr[j] % 5 == 0) {
+		arr[j] = 'Buzz'
+	}
 }
 
 document.getElementById('check').onclick = function() {
-	alert(checkStringForTemplate(document.getElementById('input').value, 
-	/https?:\/\/([w]{3}\.)?([\w-]{1,}\.){0,}[\w-]{1,}\.[a-z]{2,6}\/?([\w_-]+\/?)*/ig));
+	console.log(arr);
 };
 		</pre>
 	<script src="../js/task9.js"></script>
