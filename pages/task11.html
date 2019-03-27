@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<title>Задача 11</title>
+		<link rel="stylesheet" href="../css/style.css"/>
+	</head>
+	<body>
+		<div class="links">
+			<a href = "task10.html">Предыдущая задача</a>
+			<a href = "../index.html">Оглавление</a>
+			<a href = "task12.html">Следующая задача</a>
+		</div>
+		<h1>Задача 11</h1>
+		<p>Ноль чётный. Единица нечётная. У любого числа N чётность такая же, как у N-2. Напишите рекурсивную функцию isEven согласно этим правилам. Она должна принимать число и возвращать булевое значение. Потестируйте её на 50 и 75. Попробуйте задать ей - 1. Почему она ведёт себя таким образом? Можно ли её как-то исправить?</p>
+        <label for="input">
+			<span>Введите число:</span>
+			<input type="text" id="input"/>
+		</label>
+		<button class="check" id="check">Проверить</button>
+		<h2>Решение</h2>
+		<pre>
+document.getElementById('check').onclick = function() {
+	alert(isEven(document.getElementById('input').value));
+};
+
+// Проверяем четность числа
+// @param strNumber - число
+
+function isEven(strNumber) {
+    var num = parseInt(strNumber);
+
+    if (num == 0) {
+        return true;
+    }
+    else if (num == 1) {
+        return false;
+    }
+    else if (num < 0) {
+        return isEven(-num);
+    }
+    else  {
+        return isEven(num - 2);
+    }
+}
+		</pre>
+	<script src="../js/task11.js"></script>
+	</body>
+</html>
