@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<title>Задача 17</title>
+		<link rel="stylesheet" href="../css/style.css"/>
+	</head>
+	<body>
+		<div class="links">
+			<a href = "task16.html">Предыдущая задача</a>
+			<a href = "../index.html">Оглавление</a>
+			<a href = "task18.html">Следующая задача</a>
+		</div>
+		<h1>Задача 17</h1>
+        <p>Дан массив, состоящий из первых 10 элементов натурального ряда. Написать функцию, которая выводит сумму их квадратов, произведение их квадратов, произведение их факториалов</p>
+		<button class="check" id="check">Проверить</button>
+        <div id="result"></div>
+		<h2>Решение</h2>
+		<pre>
+var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+document.getElementById('check').onclick = function () {
+    var newElem = document.createElement('p');
+    document.getElementById('result').innerHTML = '';
+    // Для подсчета суммы квадратов используем функцию из задачи №12
+    newElem.innerHTML = '&#60p&#62Сумма квадратов элементов массива: ' + sum(squareArrayElements(arr)) + '.&#60/p&#62 ' +
+        '&#60p&#62Произведение квадратов элементов массива: ' + multiplyArrayElements(squareArrayElements(arr)) + '.&#60/p&#62' +
+        '&#60p&#62Произведение факториалов элементов массива: ' + multiplyArrayElements(factorialArrayElements(arr)) + '.&#60/p&#62';
+    document.getElementById('result').appendChild(newElem);
+};
+
+// Функция, возводящая элементы массива в квадрат
+// @param arrArray - массив с элементами, сумму квадартов которых надо считать
+
+function squareArrayElements(arrArray) {
+    var arrNewArray = [];
+    for (var i = 0; i < arrArray.length; i++) {
+        arrNewArray[i] = arrArray[i] * arrArray[i];
+    }
+    return arrNewArray;
+}
+
+// Функция, возвращающая произведение элементов массива
+// @param arrArray - массив с элементами, которые надо перемножить
+
+function multiplyArrayElements(arrArray) {
+    var multiplication = 1;
+
+    for (i = 0; i < arrArray.length; i++) {
+        multiplication *= arrArray[i];
+    }
+
+    return multiplication;
+}
+
+// Функция, возвращающая массив из факториалов элементов изначального массива
+// @param arrArray - массив с элементами, факоториалы которых надо посчитать
+
+function factorialArrayElements(arrArray) {
+    var arrNewArray = [];
+    for (i = 0; i < arrArray.length; i++) {
+        // Для получения факториалов используем функцию из задачи №7
+        arrNewArray[i] = calculateFactorial(arrArray[i]);
+    }
+    return arrNewArray;
+}
+
+		</pre>
+    <script src="../js/task7.js"></script>
+    <script src="../js/task12.js"></script>
+    <script src="../js/task17.js"></script>
+	</body>
+</html>
