@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<title>Задача 16</title>
+		<link rel="stylesheet" href="../css/style.css"/>
+	</head>
+	<body>
+		<div class="links">
+			<a href = "task15.html">Предыдущая задача</a>
+			<a href = "../index.html">Оглавление</a>
+			<a href = "task17.html">Следующая задача</a>
+		</div>
+		<h1>Задача 16</h1>
+        <p>Вывести на экран простейшие часы. Часы должны показывать время в формате ЧЧ:ММ:СС (часы:минуты:секунды) и показывать правильное время</p>
+		<button class="check" id="check">Проверить</button>
+        <div id="result"></div>
+		<h2>Решение</h2>
+		<pre>
+document.getElementById('check').onclick = function () {
+    showTime();
+}
+
+// Функция показа времени
+
+function showTime() {
+    var date = new Date(),
+        hours = date.getHours(),
+        minutes = date.getMinutes(),
+        seconds = date.getSeconds(),
+        newElem = document.createElement('p');
+
+    hours = (hours < 10) ? '0' + hours : hours;
+    minutes = (minutes < 10) ? '0' + minutes : minutes;
+    seconds = (seconds < 10) ? '0' + seconds : seconds;
+
+    newElem.innerHTML = '&#60p&#62 Текущее время: ' + hours + ':' + minutes +':' + seconds + '&#60/p&#62';
+    document.getElementById('result').innerHTML = '';
+    document.getElementById('result').appendChild(newElem);
+
+    setTimeout('showTime()',1000);
+}
+		</pre>
+    <script src="../js/task16.js"></script>
+	</body>
+</html>

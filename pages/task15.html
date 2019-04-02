@@ -59,7 +59,7 @@ cities.sort(sortCitiesByCitizens);
 document.getElementById('check').onclick = function() {
     for (var i=0; i <= cities.length - 1; i++) {
          var newElem = document.createElement('p');
-	    newElem.innerHTML = '&#60p&#62 ' + cities[i].name + '. Население (в тыс.): ' + cities[i].citizens + '&#60/p&#62';
+	    newElem.innerHTML = '&#60p&#62' + cities[i].name + '. Население (в тыс.): ' + cities[i].citizens + '&#60/p&#62';
 	    document.getElementById('result').appendChild(newElem);
     }
 }
