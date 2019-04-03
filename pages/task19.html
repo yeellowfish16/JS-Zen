@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<title>Задача 19</title>
+		<link rel="stylesheet" href="../css/style.css"/>
+	</head>
+	<body>
+		<div class="links">
+			<a href = "task18.html">Предыдущая задача</a>
+			<a href = "../index.html">Оглавление</a>
+			<a href = "task20.html">Следующая задача</a>
+		</div>
+		<h1>Задача 19</h1>
+        <p>Стихотворение-Франкенштейн. У нас есть два стихотворения:<p>
+        <p>1) <i>Однажды в студеную зимнюю пору</br>
+            Я из лесу вышел – был сильный мороз.</br>
+            Гляжу, поднимается медленно в гору</br>
+            Лошадка, везущая хвороста воз</i></p>
+        <p>2) <i>Сижу за решеткой в темнице сырой</br>
+            Вскормленный в неволе орел молодой.</br>
+            Мой грустный товарищ, махая крылом,</br>
+            Кровавую пищу клюет под окном</i></p>
+        <p>Сделать из двух стихотворений одно по следующему принципу: нечетные строки берутся из первого списка, четные – из второго. И наоборот</p>
+		<button class="check" id="check">Проверить</button>
+        <div id="result"></div>
+		<h2>Решение</h2>
+		<pre>
+var poem1 = ['Однажды в студеную зимнюю пору', 'Я из лесу вышел – был сильный мороз.', 'Гляжу, поднимается медленно в гору', 'Лошадка, везущая хвороста воз'],
+    poem2 = ['Сижу за решеткой в темнице сырой', 'Вскормленный в неволе орел молодой.', 'Мой грустный товарищ, махая крылом,', 'Кровавую пищу клюет под окном'];
+
+document.getElementById('check').onclick = function () {
+    for (var i=0; i < createNewPoem(poem1,poem2).length; i++) {
+        var newElem = document.createElement('p');
+	    newElem.innerHTML = '&#60p&#62' + createNewPoem(poem1,poem2)[i] + '&#60/p&#62';
+	    document.getElementById('result').appendChild(newElem);
+    }
+};
+
+// Создаем новое стихотворение из строчек двух других
+// @param arrPoem1, arrPoem2 - стихотворения, из котороых надо взять строки (каждая строка - элемент массива)
+
+function createNewPoem(arrPoem1, arrPoem2) {
+    var newPoem = [];
+    for (var i=0; i < arrPoem1.length; i++) {
+        // Используем функцию isEven из задачи №11
+        if (isEven(i)) {
+            newPoem.push(arrPoem1[i]);
+        }
+
+        else {
+            newPoem.push(arrPoem2[i]);
+        }
+    }
+
+    return newPoem;
+}
+		</pre>
+    <script src="../js/task11.js"></script>
+    <script src="../js/task19.js"></script>
+	</body>
+</html>
+
