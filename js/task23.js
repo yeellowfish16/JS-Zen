@@ -8,7 +8,7 @@ var string = 'Вечность',
               arr[arr.length - 3] + arr[arr.length - 4] + arr[3] + arr[1] + arr[arr.length - 2] + ', ' +
               arr[2] + arr[1] + arr[arr.length - 3] + arr[arr.length - 2] + arr[arr.length - 1] + ', ' +
               arr[arr.length - 3] + arr[arr.length - 2] + arr[4] + arr[3],
-    newArr = newWord.split(', ');
+    newArr = newWord.split(',');
 
 document.getElementById('check').onclick = function () {
     var newElem = document.createElement('p');
