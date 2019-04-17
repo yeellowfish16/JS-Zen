@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<title>Задача 28</title>
+		<link rel="stylesheet" href="../css/style.css"/>
+	</head>
+	<body>
+		<div class="links">
+			<a href = "task27.html">Предыдущая задача</a>
+			<a href = "../index.html">Оглавление</a>
+			<a href = "task29.html">Следующая задача</a>
+		</div>
+		<h1>Задача 28</h1>
+        <p>В переменной date лежит дата в формате &#39;2025-12-31&#39;. Преобразуйте эту дату в формат
+&#39;31/12/2025&#39;.</p>
+		<button class="check" id="check">Проверить</button>
+        <div id="result"></div>
+		<h2>Решение</h2>
+         <pre>
+var date = '2025-12-31',
+    dateArr = date.split('-'),
+    // Используем функцию переворачивания массива из задачи 13
+    newDateArr = reverseArray(dateArr),
+    newDate = newDateArr.join('/');
+
+document.getElementById('check').onclick = function () {
+    var newElem = document.createElement('p');
+    document.getElementById('result').innerHTML = '';
+    newElem.innerHTML = newDate;
+    document.getElementById('result').appendChild(newElem);
+};
+		</pre>
+    <script src="../js/task13.js"></script>
+    <script src="../js/task28.js"></script>
+	</body>
+</html>
+
+
+
