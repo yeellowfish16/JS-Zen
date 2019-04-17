@@ -25,8 +25,10 @@ function reverseArray(arrArray) {
 // @param arrArray - массив, который надо перевернуть
 
 function reverseArrayInPlace(arrArray) {
-    for (var i = 0; i < Math.floor(arrArray.length / 2); i++) {
-    	var array = arrArray[i];
+	var array = [];
+
+	for (var i = 0; i < Math.floor(arrArray.length / 2); i++) {
+		array = arrArray[i];
         arrArray[i] = arrArray[arrArray.length - 1 - i];
         array = arrArray[arrArray.length - 1 - i]; // и каждый раз записываем все в переменную
     }

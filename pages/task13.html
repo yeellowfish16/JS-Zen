@@ -39,7 +39,7 @@ document.getElementById('check').onclick = function() {
 		reverseInPlace = reverseArrayInPlace(newArray);
 
 	document.getElementById('result').innerHTML = '';
-	newElem.innerHTML = '&#60p&#62 Перевернутый новый массив: ' + reverse + '.&#60/p&#62';
+	newElem.innerHTML = '<p> Перевернутый новый массив: ' + reverse + '.</p>';
 	document.getElementById('result').appendChild(newElem);
 };
 
@@ -58,13 +58,16 @@ function reverseArray(arrArray) {
 // @param arrArray - массив, который надо перевернуть
 
 function reverseArrayInPlace(arrArray) {
-    for (var i = 0; i < Math.floor(arrArray.length / 2); i++) {
-    	var array = arrArray[i];
-        arrArray[i] = arrArray[arrArray.length - 1 - i];
-        array = arrArray[arrArray.length - 1 - i];
+	var array = [];
+
+	for (var i = 0; i < Math.floor(arrArray.length / 2); i++) {
+		array = arrArray[i];
+        	arrArray[i] = arrArray[arrArray.length - 1 - i];
+        	array = arrArray[arrArray.length - 1 - i]; // и каждый раз записываем все в переменную
     }
     return arrArray;
 }
+
 		</pre>
     <script src="../js/task12.js"></script>
 	<script src="../js/task13.js"></script>
