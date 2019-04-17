@@ -4,6 +4,7 @@ var date = '2025-12-31',
     newDateArr = reverseArray(dateArr),
     newDate = newDateArr.join('/');
 
+
 document.getElementById('check').onclick = function () {
     var newElem = document.createElement('p');
     document.getElementById('result').innerHTML = '';

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<title>Задача 29</title>
+		<link rel="stylesheet" href="../css/style.css"/>
+	</head>
+	<body>
+		<div class="links">
+			<a href = "task28.html">Предыдущая задача</a>
+			<a href = "../index.html">Оглавление</a>
+			<a href = "task30.html">Следующая задача</a>
+		</div>
+		<h1>Задача 29</h1>
+        <p>Дана строка &#39;js&#39;. Сделайте из нее строку &#39;JS&#39;.</p>
+		<button class="check" id="check">Проверить</button>
+        <div id="result"></div>
+		<h2>Решение</h2>
+         <pre>
+var string = 'js',
+    newString = string.toUpperCase();
+
+document.getElementById('check').onclick = function () {
+    var newElem = document.createElement('p');
+    document.getElementById('result').innerHTML = '';
+    newElem.innerHTML = newString;
+    document.getElementById('result').appendChild(newElem);
+};
+		</pre>
+    <script src="../js/task29.js"></script>
+	</body>
+</html>
+
+
+
