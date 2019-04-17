@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<title>Задача 35</title>
+		<link rel="stylesheet" href="../css/style.css"/>
+	</head>
+	<body>
+		<div class="links">
+			<a href = "task34.html">Предыдущая задача</a>
+			<a href = "../index.html">Оглавление</a>
+			<a href = "task36.html">Следующая задача</a>
+		</div>
+		<h1>Задача 35</h1>
+        <p>Преобразуйте первую букву каждого слова строки в верхний регистр</p>
+		<button class="check" id="check">Проверить</button>
+        <div id="result"></div>
+		<h2>Решение</h2>
+        <pre>
+var string = 'здоровенная порция сарказма и нецензурщины',
+    arr = string.split(' ');
+
+for (var i = 0; i < arr.length; i++) {
+    arr[i] = arr[i][0].toUpperCase() + arr[i].slice(1);
+}
+
+string = arr.join(' ');
+
+document.getElementById('check').onclick = function () {
+    var newElem = document.createElement('p');
+    document.getElementById('result').innerHTML = '';
+    newElem.innerHTML = string;
+    document.getElementById('result').appendChild(newElem);
+};
+	</pre>
+    <script src="../js/task35.js"></script>
+	</body>
+</html>
+
+
+
