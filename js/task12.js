@@ -41,7 +41,7 @@ function range(strNumber1, strNumber2, strStep) {
         }
     }
 
-    else {
+    else if (step < 0) {
         if (num1 < num2) {
             for (var i = num2; i >= num1; i += step) {
                 arr.push(i);
