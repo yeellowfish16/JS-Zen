@@ -6,18 +6,21 @@ document.getElementById('check').onclick = function() {
 // @param strNumber - число
 
 function isEven(strNumber) {
-    var num = parseInt(strNumber);
+    var num = parseInt(strNumber),
+        isNumberEven = false
 
     if (num == 0) {
-        return true;
+        isNumberEven = true;
     }
     else if (num == 1) {
-        return false;
+        isNumberEven = false;
     }
     else if (num < 0) {
-        return isEven(-num);
+        isNumberEven = isEven(-num);
     }
     else  {
-        return isEven(num - 2);
+        isNumberEven = isEven(num - 2);
     }
+
+    return isNumberEven;
 }

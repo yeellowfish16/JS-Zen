@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="003e8397-5688-4da5-9a32-19e9e372d467" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/js/task2.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/task2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/task2.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/task2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/task11.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/task11.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/task11.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/task11.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,23 +22,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/task2.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/task11.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="53" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="53" />
-              <folding>
-                <element signature="n#!!block;n#calculateSecInHour#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="376">
+              <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pages/task2.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/task11.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="25" selection-end-column="1" />
+              <folding>
+                <element signature="e#54#113#0" expanded="true" />
+                <element signature="n#!!block;n#isEven#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,8 +73,6 @@
         <option value="$PROJECT_DIR$/pages/task9.html" />
         <option value="$PROJECT_DIR$/js/task10.js" />
         <option value="$PROJECT_DIR$/pages/task10.html" />
-        <option value="$PROJECT_DIR$/js/task11.js" />
-        <option value="$PROJECT_DIR$/pages/task11.html" />
         <option value="$PROJECT_DIR$/js/task12.js" />
         <option value="$PROJECT_DIR$/pages/task12.html" />
         <option value="$PROJECT_DIR$/js/task13.js" />
@@ -110,6 +109,8 @@
         <option value="$PROJECT_DIR$/js/task26.js" />
         <option value="$PROJECT_DIR$/js/task2.js" />
         <option value="$PROJECT_DIR$/pages/task2.html" />
+        <option value="$PROJECT_DIR$/js/task11.js" />
+        <option value="$PROJECT_DIR$/pages/task11.html" />
       </list>
     </option>
   </component>
@@ -185,12 +186,12 @@
       <workItem from="1554173495392" duration="12459000" />
       <workItem from="1554269859915" duration="10520000" />
       <workItem from="1554686686052" duration="4269000" />
-      <workItem from="1555464809977" duration="871000" />
+      <workItem from="1555464809977" duration="1069000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42566000" />
+    <option name="totallyTimeSpent" value="42764000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
@@ -237,13 +238,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pages/task11.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="16" column="31" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/task10.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
@@ -436,16 +430,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
           <caret line="41" column="34" lean-forward="true" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/task11.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding>
-            <element signature="e#54#113#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -663,10 +647,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/pages/task2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="91" column="107" selection-start-line="91" selection-start-column="107" selection-end-line="91" selection-end-column="107" />
+        <state relative-caret-position="196">
+          <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -680,10 +664,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/task2.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+        <state relative-caret-position="338">
+          <caret line="91" column="107" selection-start-line="91" selection-start-column="107" selection-end-line="91" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/task11.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="25" selection-end-column="1" />
+          <folding>
+            <element signature="e#54#113#0" expanded="true" />
+            <element signature="n#!!block;n#isEven#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/task11.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
         </state>
       </provider>
     </entry>
