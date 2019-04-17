@@ -12,9 +12,15 @@ document.getElementById('check').onclick = function () {
 // @param numCutLength - количество символов, до которых надо обрезать
 
 function cutString(str, numCutLength) {
+    var result = null;
+
     if (str.length > numCutLength) {
-        str = str.substr(0, numCutLength) + '...';
+        result = str.substr(0, numCutLength) + '...';
     }
 
-    return str;
+    else {
+        result = str;
+    }
+
+    return result;
 }
