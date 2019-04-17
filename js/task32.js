@@ -1,9 +1,9 @@
-var string = 'Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.';
+var str = 'Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.';
 
 document.getElementById('check').onclick = function () {
     var newElem = document.createElement('p');
     document.getElementById('result').innerHTML = '';
-    newElem.innerHTML = cutString(string, Number(document.getElementById('input').value));
+    newElem.innerHTML = cutString(str, Number(document.getElementById('input').value));
     document.getElementById('result').appendChild(newElem);
 };
 
