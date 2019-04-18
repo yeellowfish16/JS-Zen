@@ -1,13 +1,9 @@
-var date = '2025-12-31',
-    dateArr = date.split('-');
-
-dateArr.reverse();
-
-var newDate = dateArr.join('/');
+var arr = [1, 2, 3];
+arr.reverse();
 
 document.getElementById('check').onclick = function () {
     var newElem = document.createElement('p');
     document.getElementById('result').innerHTML = '';
-    newElem.innerHTML = newDate;
+    newElem.innerHTML = arr;
     document.getElementById('result').appendChild(newElem);
 };

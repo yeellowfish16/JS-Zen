@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="003e8397-5688-4da5-9a32-19e9e372d467" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/task38.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/task38.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/task39.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/task39.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/task28.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/task28.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/task28.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/task28.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,25 +20,52 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="127" column="101" selection-start-line="127" selection-start-column="101" selection-end-line="127" selection-end-column="101" />
+            <state relative-caret-position="103">
+              <caret line="97" column="40" lean-forward="true" selection-start-line="97" selection-start-column="40" selection-end-line="97" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/task37.html">
+        <entry file="file://$PROJECT_DIR$/pages/task28.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="30" column="2" selection-end-line="38" />
+            <state relative-caret-position="198">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
+              <folding>
+                <element signature="e#536#541#0" expanded="true" />
+                <element signature="e#551#556#0" expanded="true" />
+                <element signature="e#589#594#0" expanded="true" />
+                <element signature="e#604#609#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/task28.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="e#252#449#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/task38.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="320">
+              <caret line="29" column="2" selection-end-line="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/task39.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
               <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
             </state>
           </provider>
@@ -48,7 +77,19 @@
             <state>
               <caret selection-end-line="8" selection-end-column="2" />
               <folding>
-                <element signature="e#150#346#0" expanded="true" />
+                <element signature="e#110#307#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/task39.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="8" selection-end-column="2" />
+              <folding>
+                <element signature="e#110#307#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,8 +111,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/js/task18.js" />
         <option value="$PROJECT_DIR$/pages/task18.html" />
         <option value="$PROJECT_DIR$/js/task19.js" />
         <option value="$PROJECT_DIR$/pages/task19.html" />
@@ -98,8 +137,6 @@
         <option value="$PROJECT_DIR$/pages/task13.html" />
         <option value="$PROJECT_DIR$/js/task27.js" />
         <option value="$PROJECT_DIR$/pages/task27.html" />
-        <option value="$PROJECT_DIR$/pages/task28.html" />
-        <option value="$PROJECT_DIR$/js/task28.js" />
         <option value="$PROJECT_DIR$/js/task29.js" />
         <option value="$PROJECT_DIR$/pages/task29.html" />
         <option value="$PROJECT_DIR$/pages/task30.html" />
@@ -118,9 +155,13 @@
         <option value="$PROJECT_DIR$/pages/task36.html" />
         <option value="$PROJECT_DIR$/js/task37.js" />
         <option value="$PROJECT_DIR$/pages/task37.html" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/task38.js" />
         <option value="$PROJECT_DIR$/pages/task38.html" />
+        <option value="$PROJECT_DIR$/js/task38.js" />
+        <option value="$PROJECT_DIR$/js/task39.js" />
+        <option value="$PROJECT_DIR$/pages/task39.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/pages/task28.html" />
+        <option value="$PROJECT_DIR$/js/task28.js" />
       </list>
     </option>
   </component>
@@ -198,18 +239,18 @@
       <workItem from="1554686686052" duration="4269000" />
       <workItem from="1555464809977" duration="1794000" />
       <workItem from="1555468824206" duration="3378000" />
-      <workItem from="1555488070680" duration="4089000" />
+      <workItem from="1555488070680" duration="4527000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50956000" />
+    <option name="totallyTimeSpent" value="51394000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2746781" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2746781" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -222,7 +263,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3299363" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3299363" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -272,23 +313,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/task18.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="51" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="51" />
-          <folding>
-            <element signature="n#!!block;n#calculateTriangleSquare#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/task19.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/task20.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -514,29 +538,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/task28.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="25" column="22" selection-end-line="42" />
-          <folding>
-            <element signature="e#536#541#0" expanded="true" />
-            <element signature="e#551#556#0" expanded="true" />
-            <element signature="e#589#594#0" expanded="true" />
-            <element signature="e#604#609#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/task28.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-          <folding>
-            <element signature="e#252#449#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/task29.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -715,13 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="127" column="101" selection-start-line="127" selection-start-column="101" selection-end-line="127" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/task37.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -732,20 +726,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pages/task38.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="29" column="2" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/task38.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="8" selection-end-column="2" />
           <folding>
-            <element signature="e#150#346#0" expanded="true" />
+            <element signature="e#110#307#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/task38.html">
+    <entry file="file://$PROJECT_DIR$/js/task39.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
+        <state>
+          <caret selection-end-line="8" selection-end-column="2" />
+          <folding>
+            <element signature="e#110#307#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/task39.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
           <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="97" column="40" lean-forward="true" selection-start-line="97" selection-start-column="40" selection-end-line="97" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/task28.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#536#541#0" expanded="true" />
+            <element signature="e#551#556#0" expanded="true" />
+            <element signature="e#589#594#0" expanded="true" />
+            <element signature="e#604#609#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/task28.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#252#449#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
