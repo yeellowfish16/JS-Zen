@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<title>Задача 44</title>
+		<link rel="stylesheet" href="../css/style.css"/>
+	</head>
+	<body>
+		<div class="links">
+			<a href = "task43.html">Предыдущая задача</a>
+			<a href = "../index.html">Оглавление</a>
+			<a href = "task45.html">Следующая задача</a>
+		</div>
+		<h1>Задача 44</h1>
+        <p>Дан массив [1, 2, 3, 4, 5]. С помощью метода splice сделайте из него массив [1, 'a', 'b', 2, 3, 4, 'c', 5, 'e'].</p>
+		<button class="check" id="check">Проверить</button>
+        <div id="result"></div>
+		<h2>Решение</h2>
+        <pre>
+var arr = [1, 2, 3, 4, 5];
+arr.splice(1, 0, 'a', 'b');
+arr.splice(arr.length - 1, 0, 'c');
+arr.splice(arr.length, 0, 'e');
+
+document.getElementById('check').onclick = function () {
+    var newElem = document.createElement('p');
+    document.getElementById('result').innerHTML = '';
+    newElem.innerHTML = arr;
+    document.getElementById('result').appendChild(newElem);
+};
+	    </pre>
+    <script src="../js/task44.js"></script>
+	</body>
+</html>
+
+
+
