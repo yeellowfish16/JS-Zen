@@ -5,31 +5,27 @@ document.getElementById('check').onclick = function () {
     document.getElementById('result').appendChild(newElem);
 };
 
-// Функция, возвращающая день недели
+// Функция, возврашающая результат поиска по массиву
 
 function findNumberInArray(array, number) {
-    var result = '';
+    var result = array.some(function (item) {
+        return item === number;
+    });
 
-    for (var i=0; i < array.length; i++) {
-        if (array[i] === number) {
-            result = 'Да'
-        }
-        else {
-            result = 'Нет'
-        }
+    if (!result) {
+        return result = 'Нет';
     }
 
-    return result;
+    return result = 'Да';
 }
 
 // Функция, превращающая введенную строку в массив чисел
 
 function fromStringToArray(string) {
-    var array = string.split(', ');
+    var array = string.split(', '),
+        numbers = array.map(function (item) {
+            return Number(item);
+        });
 
-    for (var i=0; i < array.length; i++) {
-        array[i] = Number(array[i]);
-    }
-
-    return array;
+    return numbers;
 }
