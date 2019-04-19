@@ -8,6 +8,5 @@ document.getElementById('check').onclick = function () {
 // Функция, возводящая число в куб
 
 function toTheCube(number) {
-    var result = number*number*number;
-    return result;
+    return Math.pow(number, 3);
 }
