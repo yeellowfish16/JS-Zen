@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<title>Задача 54</title>
+		<link rel="stylesheet" href="../css/style.css"/>
+	</head>
+	<body>
+		<div class="links">
+			<a href = "task53.html">Предыдущая задача</a>
+			<a href = "../index.html">Оглавление</a>
+			<a href = "task54.html">Следующая задача</a>
+		</div>
+		<h1>Задача 54</h1>
+        <p>Дан массив с числами. Проверьте, есть ли в нем два одинаковых числа подряд. Если есть - выведите 'да', а если нет - выведите 'нет'.</p>
+        <label for="input">
+			<span>Введите массив чисел через запятую с пробелами (например 1, 2, 3):</span>
+			<input type="text" id="input"/>
+		</label>
+		<button class="check" id="check">Проверить</button>
+        <div id="result"></div>
+		<h2>Решение</h2>
+        <pre>
+document.getElementById('check').onclick = function () {
+    var newElem = document.createElement('p');
+    document.getElementById('result').innerHTML = '';
+    // Для приведения строки с числами к массиву используем функцию из задачи №52
+    newElem.innerHTML = compareNumberInArray(fromStringToArray(document.getElementById('input').value));
+    document.getElementById('result').appendChild(newElem);
+};
+
+// Функция, проверяющая, что в массиве есть одинаковые числа
+
+function compareNumberInArray(array) {
+    var result =  false;
+
+    for (var i = 1; i < array.length; i++) {
+        if (array[i] === array[i-1]) {
+            result = true;
+        }
+    }
+
+    if (!result) {
+        return 'Нет';
+    }
+
+    return 'Да';
+}
+
+	    </pre>
+    <script src="../js/task52.js"></script>
+    <script src="../js/task54.js"></script>
+	</body>
+</html>
+
+
+
