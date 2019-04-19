@@ -13,7 +13,5 @@ function checkStartOfString(string, strTemplate) {
     if (string.substr(0, strTemplate.length) === strTemplate) {
         return 'Все верно'
     }
-    else {
-        return 'Нет, строка начинается с чего-то другого'
-    }
+    return 'Нет, строка начинается с чего-то другого'
 }

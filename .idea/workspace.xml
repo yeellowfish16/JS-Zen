@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="003e8397-5688-4da5-9a32-19e9e372d467" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/task52.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/task52.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/task49.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/task49.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/task49.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/task49.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,29 +16,28 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="177" column="61" lean-forward="true" selection-start-line="177" selection-start-column="61" selection-end-line="177" selection-end-column="61" />
+            <state relative-caret-position="206">
+              <caret line="160" column="37" lean-forward="true" selection-start-line="160" selection-start-column="37" selection-end-line="160" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pages/task52.html">
+        <entry file="file://$PROJECT_DIR$/pages/task49.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+            <state relative-caret-position="336">
+              <caret line="42" column="14" lean-forward="true" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/task52.js">
+        <entry file="file://$PROJECT_DIR$/js/task49.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="9" lean-forward="true" selection-end-line="35" />
+            <state relative-caret-position="225">
+              <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
               <folding>
-                <element signature="e#55#302#0" expanded="true" />
-                <element signature="n#!!block;n#fromStringToArray#0" expanded="true" />
+                <element signature="e#55#314#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,15 +101,15 @@
         <option value="$PROJECT_DIR$/pages/task47.html" />
         <option value="$PROJECT_DIR$/js/task48.js" />
         <option value="$PROJECT_DIR$/pages/task48.html" />
-        <option value="$PROJECT_DIR$/js/task49.js" />
         <option value="$PROJECT_DIR$/js/task50.js" />
-        <option value="$PROJECT_DIR$/pages/task49.html" />
         <option value="$PROJECT_DIR$/pages/task50.html" />
         <option value="$PROJECT_DIR$/js/task51.js" />
         <option value="$PROJECT_DIR$/pages/task51.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/task52.js" />
         <option value="$PROJECT_DIR$/pages/task52.html" />
+        <option value="$PROJECT_DIR$/pages/task49.html" />
+        <option value="$PROJECT_DIR$/js/task49.js" />
       </list>
     </option>
   </component>
@@ -192,12 +189,12 @@
       <workItem from="1555468824206" duration="3378000" />
       <workItem from="1555488070680" duration="7199000" />
       <workItem from="1555557879108" duration="947000" />
-      <workItem from="1555637148526" duration="2805000" />
+      <workItem from="1555637148526" duration="3492000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57818000" />
+    <option name="totallyTimeSpent" value="58505000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
@@ -636,17 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/task49.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="18" selection-end-column="1" />
-          <folding>
-            <element signature="e#55#251#0" expanded="true" />
-            <element signature="n#!!block;n#f#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/task50.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -655,13 +641,6 @@
             <element signature="e#55#314#0" expanded="true" />
             <element signature="n#!!block;n#f#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/task49.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="25" selection-start-line="25" selection-end-line="43" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -689,13 +668,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="177" column="61" lean-forward="true" selection-start-line="177" selection-start-column="61" selection-end-line="177" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/task52.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -711,6 +683,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="160" column="37" lean-forward="true" selection-start-line="160" selection-start-column="37" selection-end-line="160" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/task49.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+          <folding>
+            <element signature="e#55#314#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/task49.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="42" column="14" lean-forward="true" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
         </state>
       </provider>
     </entry>
