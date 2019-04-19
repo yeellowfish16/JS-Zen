@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<title>Задача 58</title>
+		<link rel="stylesheet" href="../css/style.css"/>
+	</head>
+	<body>
+		<div class="links">
+			<a href = "task57.html">Предыдущая задача</a>
+			<a href = "../index.html">Оглавление</a>
+			<a href = "task59.html">Следующая задача</a>
+		</div>
+		<h1>Задача 58</h1>
+        <p>Выведите на экран таблицу умножения (как в школьной тетради). На экран, а не в консоль!</p>
+		<button class="check" id="check">Проверить</button>
+        <div id="result"></div>
+		<h2>Решение</h2>
+        <pre>
+document.getElementById('check').onclick = function () {
+    var newElem = document.createElement('div');
+    document.getElementById('result').innerHTML = '';
+    newElem.innerHTML = multipleTable();
+    document.getElementById('result').appendChild(newElem);
+};
+
+function multipleTable() {
+    var string = '';
+
+    for (var i = 1; i <= 9; i++) {
+        for (var j = 1; j <= 9; j++) {
+            string += i + '*' + j + '=' + (i * j) + '&#60br/&#62';
+        }
+    }
+    return string;
+}
+	    </pre>
+    <script src="../js/task58.js"></script>
+	</body>
+</html>
+
+
+
