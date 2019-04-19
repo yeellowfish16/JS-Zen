@@ -11,7 +11,7 @@ function isNumberSimple(number) {
     var result = false;
 
     for (var i=2; i < number; i++) {
-        if (number % i == 0) {
+        if (number % i === 0) {
             result = true;
         }
     }
