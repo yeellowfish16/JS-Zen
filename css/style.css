@@ -48,8 +48,7 @@ input {
 
 .check {
 	display: block;
-	margin: 0 auto;
-	margin-top: 15px;
+	margin: 15px auto;
 	padding: 10px 10px;
 	width: 400px;
 	font-size: 14px;

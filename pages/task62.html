@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<title>Задача 62</title>
+		<link rel="stylesheet" href="../css/style.css"/>
+	</head>
+	<body>
+		<div class="links">
+			<a href = "task61.html">Предыдущая задача</a>
+			<a href = "../index.html">Оглавление</a>
+			<a href = "task63.html">Следующая задача</a>
+		</div>
+		<h1>Задача 62</h1>
+        <p>Дан двухмерный массив с числами, например, [[1, 2, 3], [4, 5], [6]]. Найдите сумму элементов этого массива. Массив, конечно же, может быть произвольным.</p>
+        <button class="check" id="check">Проверить</button>
+        <div id="result"></div>
+		<h2>Решение</h2>
+        <pre>
+var arr = [[1, 2, 3], [4, 5], [6]];
+
+document.getElementById('check').onclick = function () {
+    var newElem = document.createElement('div');
+    document.getElementById('result').innerHTML = '';
+    newElem.innerHTML = sumArrayElements(arr);
+    document.getElementById('result').appendChild(newElem);
+};
+
+function sumArrayElements(array) {
+    var newArray = [],
+        result = 0;
+
+    for (var i = 0; i < array.length; i++) {
+        newArray = array[i];
+
+        for (var j = 0; j < newArray.length; j++) {
+            result += newArray[j];
+        }
+    }
+
+    return result;
+}
+	    </pre>
+    <script src="../js/task62.js"></script>
+	</body>
+</html>
+
+
+
