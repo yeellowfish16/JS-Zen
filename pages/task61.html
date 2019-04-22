@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<title>Задача 61</title>
+		<link rel="stylesheet" href="../css/style.css"/>
+	</head>
+	<body>
+		<div class="links">
+			<a href = "task60.html">Предыдущая задача</a>
+			<a href = "../index.html">Оглавление</a>
+			<a href = "task62.html">Следующая задача</a>
+		</div>
+		<h1>Задача 61</h1>
+        <p>Создайте массив с фруктами: апельсин, банан, груша.</p>
+        <p>Выведите на экран, сколько на данный момент у вас фруктов в массиве.</p>
+		<button class="check" id="check">Сколько фруктов?</button>
+        <div id="result"></div>
+        <p>С помощью методов, изученных ранее, добавьте в конец массива два фрукта - яблоко и ананас, а в начало массива - грейпфрут.</p>
+		<button class="check" id="check1">Добавим новые фрукты</button>
+        <div id="result1"></div>
+		<p>Выведите на экран, сколько на данный момент у вас фруктов в массиве.</p>
+		<button class="check" id="check2">Сколько теперь фруктов?</button>
+        <div id="result2"></div>
+		<p>С помощью методов, изученных ранее, удалите из массива последний и первый элемент.</p>
+		<button class="check" id="check3">Удалим фрукты</button>
+        <div id="result3"></div>
+		<p>Выведите на экран, сколько на данный момент у вас фруктов в массиве.</p>
+		<button class="check" id="check4">Сколько теперь фруктов?</button>
+        <div id="result4"></div>
+		<p>У Вас есть массив, про который заранее известно, что в нем точно больше одного элемента. Но сколько именно - неизвестно. Пусть это будет такой массив с фруктами: var fruits = ["яблоко", "апельсин", "груша", "гранат"];</p>
+		<p>Напомню, что по условиям Вы не знаете сколько точно в нем элементов, их может быть и 100 и 200. Ваша задача состоит в том, чтобы с помощью метода splice заменить в массиве предпоследний фрукт на "ананас" и вывести весь массив на экран.</p>
+		<button class="check" id="check5">Заменим фрукт</button>
+        <div id="result5"></div>
+		<p>Когда это будет сделано, проверьте свой код на таком массиве: var fruits = ["банан", "мандарин", "манго"]; В этом массиве у Вас мандарин должен будет замениться на ананас.</p>
+		<h2>Решение</h2>
+        <pre>
+var fruits = ['апельсин', 'банан', 'груша'];
+
+document.getElementById('check').onclick = function () {
+    showResult('result', '&#60b&#62В массиве ' + fruits.length + ' фрукта.&#60/b&#62');
+};
+
+var newFruits = [];
+newFruits = newFruits.concat(fruits);
+newFruits.push('яблоко', 'ананас');
+newFruits.unshift('грейпфрут');
+
+document.getElementById('check1').onclick = function () {
+    showResult('result1', '&#60b&#62В массиве сейчас находятся фрукты: ' + newFruits + '.&#60/b&#62');
+};
+
+document.getElementById('check2').onclick = function () {
+    showResult('result2', '&#60b&#62Теперь в массиве ' + newFruits.length + ' фруктов.&#60/b&#62');
+};
+
+var newNewFruits = [];
+newNewFruits = newNewFruits.concat(newFruits);
+newNewFruits.pop();
+newNewFruits.shift();
+
+document.getElementById('check3').onclick = function () {
+    showResult('result3', '&#60b&#62Теперь в массиве такие фрукты: ' + newNewFruits + '.&#60/b&#62');
+};
+
+document.getElementById('check4').onclick = function () {
+    showResult('result4','&#60b&#62Теперь в массиве ' + newNewFruits.length + ' фрукта.&#60/b&#62');
+};
+
+var testFruits = ['яблоко', 'апельсин', 'груша', 'гранат'];
+testFruits.splice(testFruits.length - 2, 1, 'ананас');
+
+document.getElementById('check5').onclick = function () {
+    showResult('result5','&#60b&#62Теперь в массиве такие фрукты: ' + testFruits + '.&#60/b&#62');
+};
+
+function showResult(elementId, innerHtml) {
+    var newElem = document.createElement('div');
+    document.getElementById(elementId).innerHTML = '';
+    newElem.innerHTML = innerHtml;
+    document.getElementById(elementId).appendChild(newElem);
+}
+	    </pre>
+    <script src="../js/task61.js"></script>
+	</body>
+</html>
+
+
+
