@@ -1,8 +1,5 @@
 document.getElementById('check').onclick = function () {
-    var newElem = document.createElement('div');
-    document.getElementById('result').innerHTML = '';
-    newElem.innerHTML = multipleTable(document.getElementById('result'));
-    document.getElementById('result').appendChild(newElem);
+    multipleTable();
 };
 
 // function multipleTable() {

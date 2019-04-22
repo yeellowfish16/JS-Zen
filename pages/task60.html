@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<title>Задача 60</title>
+		<link rel="stylesheet" href="../css/style.css"/>
+	</head>
+	<body>
+		<div class="links">
+			<a href = "task59.html">Предыдущая задача</a>
+			<a href = "../index.html">Оглавление</a>
+			<a href = "task61.html">Следующая задача</a>
+		</div>
+		<h1>Задача 60</h1>
+        <p>С помощью функции нарисуй треугольник Паскаля:</p>
+        <p>
+            1</br>
+            11</br>
+            121</br>
+            1331</br>
+            14641</br>
+            151051</br>
+        </p>
+        <p>Довести количество итераций до 100.</p>
+		<button class="check" id="check">Проверить</button>
+        <div id="result"></div>
+		<h2>Решение</h2>
+        <pre>
+document.getElementById('check').onclick = function () {
+    drawPascalTriangle();
+};
+
+function drawPascalTriangle() {
+    var arr = [];
+
+    document.write ('&#60p&#62');
+    for(var i=1; i<=100 ; i++) {
+        arr[i] = 0;
+    }
+    arr[0] = 1;
+
+    for(var j=1;j<=100; j++) {
+        for(var k=j; k>=1; k--) {
+            document.write (arr[k-1]);
+            arr[k] = arr[k-1] + arr[k];
+        }
+        document.write('&#60p&#62');
+    }
+}
+	    </pre>
+    <script src="../js/task60.js"></script>
+	</body>
+</html>
+
+
+
