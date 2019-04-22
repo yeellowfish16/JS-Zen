@@ -2,6 +2,8 @@ document.getElementById('check').onclick = function () {
     drawPascalTriangle();
 };
 
+//Функция, ввводящая треугольник Паскаля
+
 function drawPascalTriangle() {
     var arr = [];
 

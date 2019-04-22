@@ -13,6 +13,8 @@ document.getElementById('check').onclick = function () {
 //     return string;
 // }
 
+// Функция, выводящая таблицу умножения
+
 function multipleTable() {
     document.write("<table>");
     document.write("<tr><td> </td>");

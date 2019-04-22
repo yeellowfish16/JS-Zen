@@ -37,6 +37,11 @@ document.getElementById('check5').onclick = function () {
     showResult('result5','<b>Теперь в массиве такие фрукты: ' + testFruits + '.</b>');
 };
 
+
+//Функция, выводящая результат в тело документа
+//@param elementId (string) - id элемента, в который надо вставить результат
+//@param innerHtml (string) - результат, который надо вывести
+
 function showResult(elementId, innerHtml) {
     var newElem = document.createElement('div');
     document.getElementById(elementId).innerHTML = '';

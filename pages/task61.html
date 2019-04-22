@@ -76,6 +76,10 @@ document.getElementById('check5').onclick = function () {
     showResult('result5','&#60b&#62Теперь в массиве такие фрукты: ' + testFruits + '.&#60/b&#62');
 };
 
+//Функция, выводящая результат в тело документа
+//@param elementId (string) - id элемента, в который надо вставить результат
+//@param innerHtml (string) - результат, который надо вывести
+
 function showResult(elementId, innerHtml) {
     var newElem = document.createElement('div');
     document.getElementById(elementId).innerHTML = '';
