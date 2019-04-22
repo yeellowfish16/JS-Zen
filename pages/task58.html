@@ -27,14 +27,18 @@ document.getElementById('check').onclick = function () {
 };
 
 function multipleTable() {
-    var string = '';
-
-    for (var i = 1; i <= 9; i++) {
-        for (var j = 1; j <= 9; j++) {
-            string += i + '*' + j + '=' + (i * j) + '&#60br/&#62';
+    document.write("&#60table&#62");
+    document.write("&#60tr&#62&#60td&#62 &#60/td&#62");
+    for (i = 1; i <= 10; i++) document.write("&#60td&#62" + i + " &#60/td&#62");
+    document.write("&#60/tr&#62");
+    for (i = 1; i <= 10; i++) {
+        document.write("&#60tr&#62&#60td&#62" + i + " &#60/td&#62");
+        for (j = 1; j <= 10; j++) {
+            document.write("&#60td bgcolor='#f5f5f5'&#62" + (i * j) + " &#60/td&#62");
         }
+        document.write("&#60/tr&#62");
     }
-    return string;
+    document.write("&#60/table&#62");
 }
 	    </pre>
     <script src="../js/task58.js"></script>
