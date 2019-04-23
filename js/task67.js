@@ -16,10 +16,8 @@ function getDigitsSumToOneDigit(number) {
     })
 
     if (sum > 9) {
-        getDigitsSumToOneDigit(sum);
+        sum = getDigitsSumToOneDigit(sum);
     }
-
-    console.log(sum);
 
     return sum;
 }
