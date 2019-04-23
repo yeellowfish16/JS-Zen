@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<title>Задача 65</title>
+		<link rel="stylesheet" href="../css/style.css"/>
+	</head>
+	<body>
+		<div class="links">
+			<a href = "task64.html">Предыдущая задача</a>
+			<a href = "../index.html">Оглавление</a>
+			<a href = "task66.html">Следующая задача</a>
+		</div>
+		<h1>Задача 65</h1>
+        <p>Сделайте функцию getDivisors, которая параметром принимает число и возвращает массив его делителей (чисел, на которое делится данное число).</p>
+        <label for="input">
+			<span>Введите число:</span>
+			<input type="text" id="input"/>
+		</label>
+        <button class="check" id="check">Проверить</button>
+        <div id="result"></div>
+		<h2>Решение</h2>
+        <pre>
+document.getElementById('check').onclick = function () {
+    var newElem = document.createElement('p');
+    document.getElementById('result').innerHTML = '';
+    newElem.innerHTML = 'Числа, на которые это число делится без остатка: ' + getDivisors(Number(document.getElementById('input').value));
+    document.getElementById('result').appendChild(newElem);
+};
+
+// Функция, для получения делителей числа
+
+function getDivisors(number) {
+    var arr = [],
+        resultArr = [];
+
+    for (var i = 0; i < number; i++) {
+        arr.push(number - i);
+    }
+
+    resultArr = arr.filter(function (item) {
+        return number % item === 0;
+    });
+
+    return resultArr;
+}
+	    </pre>
+    <script src="../js/task65.js"></script>
+	</body>
+</html>
+
+
+
