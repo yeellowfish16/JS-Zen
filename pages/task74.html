@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<title>Задача 74</title>
+		<link rel="stylesheet" href="../css/style.css"/>
+	</head>
+	<body>
+		<div class="links">
+			<a href = "task73.html">Предыдущая задача</a>
+			<a href = "../index.html">Оглавление</a>
+			<a href = "task75.html">Следующая задача</a>
+		</div>
+		<h1>Задача 74</h1>
+        <p>Вывести таблицу 10 × 10, заполненую числами от 1 до 100</p>
+        <button class="check" id="check">Проверить</button>
+        <div id="result"></div>
+		<h2>Решение</h2>
+        <pre>
+document.getElementById('check').onclick = function () {
+    drawTable();
+};
+
+function drawTable() {
+    var firstNum = 1;
+
+    document.write('&#60table&#62');
+
+    for (var row = 0; row < 10; row++) {
+        document.write('<tr>');
+
+        for (var cell = 0; cell < 10; cell++) {
+            document.write('&#60td style="background-color: #f5f5f5"&#62' + firstNum++ + '&#60/td&#62');
+        }
+
+        document.write('&#60/tr&#62');
+    }
+
+    document.write('&#60/table&#62');
+}
+	    </pre>
+    <script src="../js/task74.js"></script>
+	</body>
+</html>
+
+
+
