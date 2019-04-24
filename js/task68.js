@@ -8,12 +8,27 @@ document.getElementById('check').onclick = function () {
 
 // Функция, возвращающая сумму квадратов элементов
 
+// function findSumOfSquares(array) {
+//     var sum = 0;
+//
+//     array.forEach(function (item) {
+//         return sum += Math.pow(item, 2);
+//     });
+//
+//     return sum;
+// }
+
+// Функция, возвращающая сумму квадратов элементов через рекурсию
+
+var sum = 0;
+
 function findSumOfSquares(array) {
-    var sum = 0;
 
-    array.forEach(function (item) {
-        return sum += Math.pow(item, 2);
-    });
+    if (array.length <= 1) {
+        return sum + Math.pow(array[0], 2);
+    }
+    sum += Math.pow(array[0], 2);
+    array.shift();
+    return findSumOfSquares(array);
 
-    return sum;
 }

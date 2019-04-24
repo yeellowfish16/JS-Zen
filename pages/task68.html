@@ -31,7 +31,7 @@ document.getElementById('check').onclick = function () {
     document.getElementById('result').appendChild(newElem);
 };
 
-// Функция, возвращающая сумму квадратов элементов
+// Функция, возвращающая сумму квадратов элементов через цикл
 
 function findSumOfSquares(array) {
     var sum = 0;
@@ -41,6 +41,21 @@ function findSumOfSquares(array) {
     });
 
     return sum;
+}
+
+// Функция, возвращающая сумму квадратов элементов через рекурсию
+
+var sum = 0;
+
+function findSumOfSquares(array) {
+
+    if (array.length <= 1) {
+        return sum + Math.pow(array[0], 2);
+    }
+    sum += Math.pow(array[0], 2);
+    array.shift();
+    return findSumOfSquares(array);
+
 }
 	    </pre>
     <script src="../js/task52.js"></script>
