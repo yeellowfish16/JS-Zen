@@ -5,7 +5,5 @@ document.getElementById('check').onclick = function () {
 // Функция, ищущая подстроку в строке
 
 function findSubstring(string, substring) {
-    string = string.trim();
-
-    return string.indexOf(substring) >= 0 ? true : false;
+    return string.trim().indexOf(substring) >= 0 ? true : false;
 }
