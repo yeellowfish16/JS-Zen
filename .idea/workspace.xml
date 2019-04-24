@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="003e8397-5688-4da5-9a32-19e9e372d467" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/js/task68.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/task68.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,38 +18,57 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="216" column="65" selection-start-line="216" selection-start-column="65" selection-end-line="216" selection-end-column="65" />
+            <state relative-caret-position="386">
+              <caret line="219" column="106" selection-end-line="323" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/task67.html">
+        <entry file="file://$PROJECT_DIR$/pages/task68.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-12" />
+            <state relative-caret-position="559">
+              <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/task67.js">
+        <entry file="file://$PROJECT_DIR$/js/task68.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="22" selection-end-column="1" />
+            <state relative-caret-position="255">
+              <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
               <folding>
-                <element signature="e#55#305#0" expanded="true" />
-                <element signature="n#!!block;n#getDigitsSum#0" expanded="true" />
-                <element signature="e#516#551#0" expanded="true" />
+                <element signature="e#55#370#0" expanded="true" />
+                <element signature="e#644#660#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/lesson-js/js/page/script-75.js">
+        <entry file="file://$USER_HOME$/Downloads/lesson-js/js/page/script-76.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="11" column="33" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="33" />
+            <state relative-caret-position="255">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="n#!!block;n#lesson73#0" expanded="true" />
+                <element signature="n#!!block;n#lesRec#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/task52.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="5" selection-end-column="2" />
+              <folding>
+                <element signature="e#55#370#0" expanded="true" />
+                <element signature="n#!!block;n#findNumberInArray#0" expanded="true" />
+                <element signature="n#!!block;n#fromStringToArray#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -64,6 +86,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>60</find>
+      <find>.map</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -72,8 +95,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pages/task43.html" />
-        <option value="$PROJECT_DIR$/js/task44.js" />
         <option value="$PROJECT_DIR$/pages/task44.html" />
         <option value="$PROJECT_DIR$/js/task45.js" />
         <option value="$PROJECT_DIR$/pages/task45.html" />
@@ -122,11 +143,13 @@
         <option value="$PROJECT_DIR$/pages/task66.html" />
         <option value="$PROJECT_DIR$/js/task67.js" />
         <option value="$PROJECT_DIR$/pages/task67.html" />
+        <option value="$PROJECT_DIR$/pages/task68.html" />
+        <option value="$PROJECT_DIR$/js/task68.js" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
@@ -136,6 +159,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -162,7 +186,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -205,18 +228,19 @@
       <workItem from="1555557879108" duration="947000" />
       <workItem from="1555637148526" duration="13536000" />
       <workItem from="1555899962524" duration="5837000" />
-      <workItem from="1555984499748" duration="5688000" />
+      <workItem from="1555984499748" duration="6019000" />
+      <workItem from="1556071834256" duration="876000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80074000" />
+    <option name="totallyTimeSpent" value="81281000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28540772" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28898427" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -298,7 +322,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$USER_HOME$/Downloads/lesson-js/js/page/script-74.js</url>
           <line>6</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
@@ -310,30 +333,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Downloads/lesson-js/js/page/script-56.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="44" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/task32.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="84" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="84" />
-          <folding>
-            <element signature="n#!!block;n#cutString#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/task51.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="44" column="14" lean-forward="true" selection-end-line="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/task49.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -614,25 +613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/task52.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="5" selection-end-column="2" />
-          <folding>
-            <element signature="e#55#370#0" expanded="true" />
-            <element signature="n#!!block;n#findNumberInArray#0" expanded="true" />
-            <element signature="n#!!block;n#fromStringToArray#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/task63.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-91">
-          <caret line="25" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/task65.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -703,6 +683,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/task67.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/Downloads/lesson-js/js/page/script-75.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -710,27 +697,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/task67.js">
+    <entry file="file://$PROJECT_DIR$/pages/task67.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret selection-end-line="22" selection-end-column="1" />
+          <caret selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/task63.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/task52.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="5" selection-end-column="2" />
           <folding>
-            <element signature="e#55#305#0" expanded="true" />
-            <element signature="n#!!block;n#getDigitsSum#0" expanded="true" />
-            <element signature="e#516#551#0" expanded="true" />
+            <element signature="e#55#370#0" expanded="true" />
+            <element signature="n#!!block;n#findNumberInArray#0" expanded="true" />
+            <element signature="n#!!block;n#fromStringToArray#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/task67.html">
+    <entry file="file://$PROJECT_DIR$/pages/task68.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12" />
+        <state relative-caret-position="559">
+          <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/lesson-js/js/page/script-76.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="n#!!block;n#lesson73#0" expanded="true" />
+            <element signature="n#!!block;n#lesRec#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/task68.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+          <folding>
+            <element signature="e#55#370#0" expanded="true" />
+            <element signature="e#644#660#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="216" column="65" selection-start-line="216" selection-start-column="65" selection-end-line="216" selection-end-column="65" />
+        <state relative-caret-position="386">
+          <caret line="219" column="106" selection-end-line="323" />
         </state>
       </provider>
     </entry>
