@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<title>Задача 75</title>
+		<link rel="stylesheet" href="../css/style.css"/>
+	</head>
+	<body>
+		<div class="links">
+			<a href = "task74.html">Предыдущая задача</a>
+			<a href = "../index.html">Оглавление</a>
+			<a href = "task76.html">Следующая задача</a>
+		</div>
+		<h1>Задача 75</h1>
+        <p>Дана строка: «Бык жевал траву». Преобразовать ее в отрывок HTML-кода:
+        <pre>
+&#60div class=”animal”&#62&#60em&#62Бык&#60/em&#62 курил &#60blockquote&#62трубку мира&#60/blockquote&#62 с индейцами майя &#60a href=”https://london.xyz”&#62&#60span&#62в Амстердаме&#60/span&#62&#60/a&#62&#60/div&#62
+        </pre>
+        <button class="check" id="check">Проверить</button>
+        <div id="result"></div>
+		<h2>Решение</h2>
+        <pre>
+var string = 'Бык жевал траву';
+
+document.getElementById('check').onclick = function () {
+    var newElem = document.createElement('div');
+    document.getElementById('result').innerHTML = '';
+    newElem.innerHTML =
+            '&#60div class="animal"&#62&#60em&#62' +
+            string.substr(0,3) +
+            '&#60/em&#62 курил &#60blockquote&#62трубку мира&#60/blockquote&#62 с индейцами майя &#60a href=”https://london.xyz”&#62&#60span&#62в Амстердаме&#60/span&#62&#60/a&#62&#60/div&#62';
+    document.getElementById('result').appendChild(newElem);
+};
+        </pre>
+    <script src="../js/task75.js"></script>
+	</body>
+</html>
+
+
+
