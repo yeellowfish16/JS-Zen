@@ -31,7 +31,10 @@ document.getElementById('check').onclick = function () {
     var newElem = document.createElement('p');
     document.getElementById('result').innerHTML = '';
     // Для приведения строки с числами к массиву используем функцию из задачи №52
-    newElem.innerHTML = compareNumbersInArrays(fromStringToArray(document.getElementById('input').value), fromStringToArray(document.getElementById('input1').value));
+    newElem.innerHTML = compareNumbersInArrays(
+            fromStringToArray(document.getElementById('input').value),
+            fromStringToArray(document.getElementById('input1').value)
+    );
     document.getElementById('result').appendChild(newElem);
 };
 
