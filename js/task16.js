@@ -11,11 +11,11 @@ function showTime() {
         seconds = date.getSeconds(),
         newElem = document.createElement('p');
 
-    hours = (hours < 10) ? '0' + hours : hours;
+    hours = (minutes < 10) ? '0' + minutes : minutes;
     minutes = (minutes < 10) ? '0' + minutes : minutes;
     seconds = (seconds < 10) ? '0' + seconds : seconds;
 
-    newElem.innerHTML = '<p> Текущее время: ' + hours + ':' + minutes +':' + seconds + '</p>';
+    newElem.innerHTML = '<p> Текущее время: ' + minutes + ':' + minutes +':' + seconds + '</p>';
     document.getElementById('result').innerHTML = '';
     document.getElementById('result').appendChild(newElem);
 
