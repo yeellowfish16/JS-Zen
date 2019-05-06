@@ -1,5 +1,6 @@
 var arr = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'],
-    day = 0;
+    date = new Date(),
+    day = date.getDay();
 
 document.getElementById('check').onclick = function () {
     showDays(arr);
@@ -8,11 +9,11 @@ document.getElementById('check').onclick = function () {
 // Функция, чтобы вывести ключ объекта и его свойство
 
 function showDays(arr) {
-    for (var i = 0; i < arr.length; i++) {
+    for (var i = 1; i <= arr.length; i++) {
         if (i == day) {
-            document.write('<i>' + arr[i] + '</i><br>');
+            document.write('<i>' + arr[i - 1] + '</i><br>');
         } else {
-            document.write(arr[i] + '<br>');
+            document.write(arr[i - 1] + '<br>');
         }
     }
 }
