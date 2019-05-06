@@ -7,9 +7,10 @@ body {
 	font-family: 'Tahoma', 'Geneva', sans-serif;
 }
 
-ol {
+ul {
 	display: flex;
 	width: 100%;
+	list-style: none;
 }
 
 .list-block {
