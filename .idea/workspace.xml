@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="003e8397-5688-4da5-9a32-19e9e372d467" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/task82.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/task82.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/task82.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/task82.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/task82.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/task82.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,23 +31,22 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/task82.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="53" column="1" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+            <state relative-caret-position="143">
+              <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/task82.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="28" selection-end-column="1" />
+            <state relative-caret-position="210">
+              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
               <folding>
                 <element signature="e#55#292#0" expanded="true" />
-                <element signature="n#!!block;n#compareHalfOfNumber#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -131,8 +128,8 @@
         <option value="$PROJECT_DIR$/js/task81.js" />
         <option value="$PROJECT_DIR$/pages/task81.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/task82.js" />
         <option value="$PROJECT_DIR$/pages/task82.html" />
+        <option value="$PROJECT_DIR$/js/task82.js" />
       </list>
     </option>
   </component>
@@ -220,18 +217,18 @@
       <workItem from="1556158456315" duration="592000" />
       <workItem from="1556159336737" duration="3051000" />
       <workItem from="1556244724684" duration="6148000" />
-      <workItem from="1557105928706" duration="3336000" />
+      <workItem from="1557105928706" duration="3377000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102129000" />
+    <option name="totallyTimeSpent" value="102170000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30615166" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30615166" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -244,7 +241,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3299363" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3299363" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -748,21 +745,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/task82.js">
+    <entry file="file://$PROJECT_DIR$/pages/task82.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="28" selection-end-column="1" />
-          <folding>
-            <element signature="e#55#292#0" expanded="true" />
-            <element signature="n#!!block;n#compareHalfOfNumber#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="143">
+          <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/task82.html">
+    <entry file="file://$PROJECT_DIR$/js/task82.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="53" column="1" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+        <state relative-caret-position="210">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding>
+            <element signature="e#55#292#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
