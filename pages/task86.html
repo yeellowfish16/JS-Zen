@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<title>Задача 86</title>
+		<link rel="stylesheet" href="../css/style.css"/>
+	</head>
+	<body>
+		<div class="links">
+			<a href = "task85.html">Предыдущая задача</a>
+			<a href = "../index.html">Оглавление</a>
+			<a href = "task87.html">Следующая задача</a>
+		</div>
+		<h1>Задача 86</h1>
+        <p>Дано число n=1000. Делите его на 2 столько раз, пока результат деления не станет меньше 50. Какое число получится? Посчитайте количество итераций, необходимых для этого (итерация - это проход цикла), и запишите его в переменную num.</p>
+        <button class="check" id="check">Проверить</button>
+        <div id="result"></div>
+		<h2>Решение</h2>
+        <pre>
+var n = 1000;
+
+document.getElementById('check').onclick = function () {
+    var newElem = document.createElement('p');
+    document.getElementById('result').innerHTML = '';
+    newElem.innerHTML = divisionNum(n, 50);
+    document.getElementById('result').appendChild(newElem);
+};
+
+// Функция для деления числа на 2 до достижения определенного результата
+// @param num - число, которое делим
+// @param limit - после какого числа остановиться
+
+function divisionNum(n, limit) {
+    var num = 0;
+
+    while (n > limit) {
+        num++;
+        n /= 2;
+    }
+    return 'Получилось число ' + n + '. Количество итераций: ' + num + '.'
+}
+        </pre>
+    <script src="../js/task86.js"></script>
+	</body>
+</html>
+
+
+
