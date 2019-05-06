@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<title>Задача 84</title>
+		<link rel="stylesheet" href="../css/style.css"/>
+	</head>
+	<body>
+		<div class="links">
+			<a href = "task83.html">Предыдущая задача</a>
+			<a href = "../index.html">Оглавление</a>
+			<a href = "task85.html">Следующая задача</a>
+		</div>
+		<h1>Задача 84</h1>
+        <p>Дан объект obj с ключами 'Минск', 'Москва', 'Киев' с элементами 'Беларусь', 'Россия', 'Украина'. С помощью цикла for-in выведите на экран строки такого формата: 'Минск - это Беларусь'.</p>
+        <button class="check" id="check">Проверить</button>
+        <div id="result"></div>
+		<h2>Решение</h2>
+        <pre>
+var obj = {
+    'Минск': 'Беларусь',
+    'Москва': 'Россия',
+    'Киев': 'Украина'
+};
+
+document.getElementById('check').onclick = function () {
+    showObject(obj);
+};
+
+// Функция, чтобы вывести ключ объекта и его свойство
+
+function showObject(object) {
+    for (var key in object) {
+        alert(key + ' - это ' + object[key] + '.');
+    }
+}
+        </pre>
+    <script src="../js/task84.js"></script>
+	</body>
+</html>
+
+
+
